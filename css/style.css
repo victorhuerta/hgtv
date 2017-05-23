@@ -138,14 +138,18 @@ a {
 
   margin: 0px;
 padding-bottom: 20px;
-  background-color: #000;
-  border: 1px solid black;
-  opacity: 0.6;
+
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
- .hero-content .btn{opacity:1}
-
+ .hero-content a.btn{background-color:#2695D2}
+ .hero-content a.btn:hover{background-color:transparent}
+ 
+ .hero-content h1.logo, .hero-content h2.intro{
+	     text-shadow: 2px 2px 5px black;
+	 
+ }
+ 
 
 .header .intro {
   font-size: 35px;
@@ -295,8 +299,25 @@ padding-bottom: 20px;
 .block-content .block-description {
   font-size: 25px;
   font-weight: 100;
-  margin: 15px 0 60px 0;
+  margin: 15px 0 60px 0; 
+
 }
+
+.team .container .block-content, .team .container .block-description  {
+  font-size: 25px;
+  font-weight: 100;
+  margin: 15px 0 60px 0; 
+text-shadow: 2px 2px 5px black; 
+
+}
+
+
+.team .container .block-title{
+	
+	text-shadow: 2px 2px 5px black; 
+	
+}
+
 @media (max-width: 767px) {
   .block-content .block-description {
     font-size: 18px;
